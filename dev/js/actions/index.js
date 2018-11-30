@@ -1,7 +1,8 @@
-export const selectUser = (user) => {
-    console.log("You clicked on user: ", user.first);
-    return {
-        type: 'USER_SELECTED',
-        payload: user
-    }
+export const selectUser = user => {
+  console.log('SelectUser action creator called');
+  console.log('Clicked on user ' + user.first);
+  return {
+      type: 'USER SELECTED',
+      payload: user
+  }
 };
